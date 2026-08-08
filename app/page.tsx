@@ -3,8 +3,10 @@ import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Palette, Zap } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { FadeIn, SlideUp, SlideRight, SlideLeft } from "@/components/animations";
 import { Section, SectionTitle, Card, TechBadge } from "@/components/shared";
+import { HeroCarousel } from "@/components/hero-carousel";
 
 export default function Home() {
   return (
@@ -20,38 +22,44 @@ export default function Home() {
           </div>
 
           <div className="container mx-auto">
-            <div className="max-w-4xl mx-auto">
-              <FadeIn direction="down" duration={0.8}>
-                <div className="inline-block mb-6">
-                  <TechBadge variant="default">Available for Work</TechBadge>
-                </div>
-              </FadeIn>
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="space-y-6">
+                <FadeIn direction="down" duration={0.8}>
+                  <div className="inline-block mb-6">
+                    <TechBadge variant="default">Available for Work</TechBadge>
+                  </div>
+                </FadeIn>
 
-              <FadeIn direction="up" delay={0.2} duration={0.8}>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-                  Full Stack Developer
-                </h1>
-              </FadeIn>
+                <FadeIn direction="up" delay={0.2} duration={0.8}>
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                    Full Stack Developer
+                  </h1>
+                </FadeIn>
 
-              <FadeIn direction="up" delay={0.4} duration={0.8}>
-                <p className="text-xl sm:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  I build modern web applications with Laravel, React, and Next.js.
-                  Specializing in business software, ERP systems, and scalable solutions.
-                </p>
-              </FadeIn>
+                <FadeIn direction="up" delay={0.4} duration={0.8}>
+                  <p className="text-lg sm:text-xl text-muted-foreground mb-8">
+                    I build modern web applications with Laravel, React, and Next.js.
+                    Specializing in business software, ERP systems, and scalable solutions.
+                  </p>
+                </FadeIn>
 
-              <FadeIn direction="up" delay={0.6} duration={0.8}>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" asChild>
-                    <Link href="/projects">
-                      View My Work
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button size="lg" variant="outline" asChild>
-                    <Link href="/contact">Get In Touch</Link>
-                  </Button>
-                </div>
+                <FadeIn direction="up" delay={0.6} duration={0.8}>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" asChild>
+                      <Link href="/projects">
+                        View My Work
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" asChild>
+                      <Link href="/contact">Get In Touch</Link>
+                    </Button>
+                  </div>
+                </FadeIn>
+              </div>
+
+              <FadeIn direction="right" delay={0.4} duration={0.8}>
+                <HeroCarousel />
               </FadeIn>
             </div>
           </div>
