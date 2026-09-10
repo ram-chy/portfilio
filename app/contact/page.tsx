@@ -20,7 +20,7 @@ export default function ContactPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  Have a project in mind? Let's discuss how I can help you bring
+                  Have a project in mind? Let&apos;s discuss how I can help you bring
                   your ideas to life.
                 </p>
               </FadeIn>

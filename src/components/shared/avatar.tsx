@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 interface AvatarProps {
@@ -32,10 +33,12 @@ export function Avatar({
       )}
     >
       {src ? (
-        <img
+        <Image
           src={src}
           alt={alt}
-          className="h-full w-full object-cover"
+          fill
+          sizes="96px"
+          className="object-cover"
         />
       ) : (
         <span className="font-medium text-muted-foreground">

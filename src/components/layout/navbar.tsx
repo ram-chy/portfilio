@@ -3,6 +3,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -42,20 +43,20 @@ export function Navbar() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold">RC</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -63,7 +64,7 @@ export function Navbar() {
           <div className="hidden md:flex items-center space-x-2">
             <ThemeToggle />
             <Button size="sm" asChild>
-              <a href="/contact">Hire Me</a>
+              <Link href="/contact">Hire Me</Link>
             </Button>
           </div>
 
@@ -94,18 +95,18 @@ export function Navbar() {
           >
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="pt-2">
                 <Button size="sm" className="w-full" asChild>
-                  <a href="/contact">Hire Me</a>
+                  <Link href="/contact">Hire Me</Link>
                 </Button>
               </div>
             </div>

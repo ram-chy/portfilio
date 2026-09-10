@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { FadeIn, SlideUp } from "@/components/animations";
-import { Section, SectionTitle, Card, TechBadge, Timeline, TimelineItem } from "@/components/shared";
+import { Section, SectionTitle, Card, TechBadge, TimelineItem } from "@/components/shared";
 
 const experiences = [
   {

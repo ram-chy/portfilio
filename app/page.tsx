@@ -3,8 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Palette, Zap } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-import { FadeIn, SlideUp, SlideRight, SlideLeft } from "@/components/animations";
+import { FadeIn, SlideUp } from "@/components/animations";
 import { Section, SectionTitle, Card, TechBadge } from "@/components/shared";
 import { HeroCarousel } from "@/components/hero-carousel";
 
@@ -198,12 +197,12 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <FadeIn direction="up">
-                <h2 className="text-4xl sm:text-5xl font-bold mb-4">Let's Work Together</h2>
+                <h2 className="text-4xl sm:text-5xl font-bold mb-4">Let&apos;s Work Together</h2>
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  Have a project in mind? I'd love to hear about it.
-                  Let's discuss how I can help bring your ideas to life.
+                  Have a project in mind? I&apos;d love to hear about it.
+                  Let&apos;s discuss how I can help bring your ideas to life.
                 </p>
               </FadeIn>
               <FadeIn direction="up" delay={0.4}>

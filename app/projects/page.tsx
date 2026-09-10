@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { FadeIn, SlideUp } from "@/components/animations";
-import { Section, SectionTitle, Card, TechBadge } from "@/components/shared";
+import { Section, Card, TechBadge } from "@/components/shared";
 
 const projects = [
   {
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  A collection of projects I've built, from enterprise systems to
+                  A collection of projects I&apos;ve built, from enterprise systems to
                   modern web applications.
                 </p>
               </FadeIn>
@@ -144,7 +144,7 @@ export default function ProjectsPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  I'm always open to discussing new projects and opportunities.
+                  I&apos;m always open to discussing new projects and opportunities.
                 </p>
               </FadeIn>
               <FadeIn direction="up" delay={0.4}>

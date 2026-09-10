@@ -18,7 +18,7 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground mb-8">
-                  I'm Ram Chowdhury, a Full Stack Developer passionate about building
+                  I&apos;m Ram Chowdhury, a Full Stack Developer passionate about building
                   modern web applications and business solutions.
                 </p>
               </FadeIn>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 </SlideUp>
                 <SlideUp delay={0.2}>
                   <p>
-                    With years of experience in full-stack development, I've had the privilege
+                    With years of experience in full-stack development, I&apos;ve had the privilege
                     of working on diverse projects ranging from small business websites to
                     complex enterprise resource planning (ERP) systems.
                   </p>
@@ -146,7 +146,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-muted-foreground text-lg">
                 <SlideUp delay={0.1}>
                   <p>
-                    I'm currently focused on building modern, performant web applications
+                    I&apos;m currently focused on building modern, performant web applications
                     using the latest technologies. My current areas of interest include:
                   </p>
                 </SlideUp>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { FadeIn, SlideUp } from "@/components/animations";
-import { Section, SectionTitle, Card, TechBadge } from "@/components/shared";
+import { Section, Card } from "@/components/shared";
 
 const services = [
   {
@@ -161,7 +161,7 @@ export default function ServicesPage() {
               </FadeIn>
               <FadeIn direction="up" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  Let's discuss your project requirements and how I can help you
+                  Let&apos;s discuss your project requirements and how I can help you
                   achieve your goals.
                 </p>
               </FadeIn>
