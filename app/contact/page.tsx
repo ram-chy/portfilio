@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageSquare, Phone } from "lucide-react";
+import { Mail, MessageSquare, SquarePlay, Link2, FolderGit2 } from "lucide-react";
 import { FadeIn, SlideUp } from "@/components/animations";
 import { Section, SectionTitle, Card } from "@/components/shared";
 
@@ -31,16 +31,16 @@ export default function ContactPage() {
         {/* Contact Methods */}
         <Section background="muted">
           <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
               <SlideUp delay={0.1}>
                 <Card padding="lg" hover className="text-center">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <Mail className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">Email</h3>
-                  <p className="text-sm text-muted-foreground mb-4">ram@example.com</p>
+                  <p className="text-sm text-muted-foreground mb-4">ram.chow93@gmail.com</p>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="mailto:ram@example.com">Send Email</a>
+                    <a href="mailto:ram.chow93@gmail.com">Send Email</a>
                   </Button>
                 </Card>
               </SlideUp>
@@ -51,9 +51,9 @@ export default function ContactPage() {
                     <MessageSquare className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">WhatsApp</h3>
-                  <p className="text-sm text-muted-foreground mb-4">+1 234 567 8900</p>
+                  <p className="text-sm text-muted-foreground mb-4">+91 91237 54092</p>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919123754092" target="_blank" rel="noopener noreferrer">
                       Message on WhatsApp
                     </a>
                   </Button>
@@ -63,13 +63,43 @@ export default function ContactPage() {
               <SlideUp delay={0.3}>
                 <Card padding="lg" hover className="text-center">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <Phone className="h-7 w-7 text-primary" />
+                    <Link2 className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">LinkedIn</h3>
                   <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
                   <Button variant="outline" className="w-full" asChild>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/ram-chowdhury-67077a358" target="_blank" rel="noopener noreferrer">
                       View Profile
+                    </a>
+                  </Button>
+                </Card>
+              </SlideUp>
+
+              <SlideUp delay={0.4}>
+                <Card padding="lg" hover className="text-center">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <SquarePlay className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">YouTube</h3>
+                  <p className="text-sm text-muted-foreground mb-4">@RamChowdhuryDev</p>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://youtube.com/@RamChowdhuryDev" target="_blank" rel="noopener noreferrer">
+                      Watch Videos
+                    </a>
+                  </Button>
+                </Card>
+              </SlideUp>
+
+              <SlideUp delay={0.5}>
+                <Card padding="lg" hover className="text-center">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <FolderGit2 className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">GitHub</h3>
+                  <p className="text-sm text-muted-foreground mb-4">@ram-chy</p>
+                  <Button variant="outline" className="w-full" asChild>
+                    <a href="https://github.com/ram-chy" target="_blank" rel="noopener noreferrer">
+                      View Repos
                     </a>
                   </Button>
                 </Card>

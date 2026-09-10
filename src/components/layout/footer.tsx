@@ -49,7 +49,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Connect</h3>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/ram-chowdhury-67077a358"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -57,7 +57,7 @@ export function Footer() {
                 LinkedIn
               </a>
               <a
-                href="mailto:ram@example.com"
+                href="mailto:ram.chow93@gmail.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />
