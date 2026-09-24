@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Palette, Zap } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { FadeIn, SlideUp } from "@/components/animations";
 import { Section, SectionTitle, Card, TechBadge } from "@/components/shared";
@@ -144,17 +145,24 @@ export default function Home() {
                           </a>
                         </Button>
                         <Button variant="outline" asChild>
-                          <a href="#" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://book-store-demo-rho.vercel.app/login"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             Live Demo
                           </a>
                         </Button>
                       </div>
                     </div>
-                    <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl flex items-center justify-center">
-                      <div className="text-center p-8">
-                        <Code className="h-16 w-16 mx-auto mb-4 text-primary" />
-                        <p className="text-sm text-muted-foreground">Project Preview</p>
-                      </div>
+                    <div className="relative rounded-xl overflow-hidden">
+                      <Image
+                        src="/images/projects/Dashboard.jpg"
+                        alt="ERP System dashboard preview"
+                        width={1600}
+                        height={800}
+                        className="object-cover w-full h-full"
+                      />
                     </div>
                   </div>
                 </Card>

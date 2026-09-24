@@ -13,7 +13,7 @@ const projects = [
       "A comprehensive enterprise resource planning system with dashboard, authentication, inventory management, sales tracking, quotations, invoices, and reporting.",
     technologies: ["Laravel", "React", "MySQL", "REST API"],
     github: "https://github.com",
-    demo: "#",
+    demo: "https://book-store-demo-rho.vercel.app/login",
     featured: true,
   },
   {
