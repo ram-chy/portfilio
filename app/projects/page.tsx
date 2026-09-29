@@ -17,6 +17,15 @@ const projects = [
     featured: true,
   },
   {
+    title: "Task Manager",
+    description:
+      "A task management web application for creating, organizing, and tracking tasks, built and deployed with Laravel.",
+    technologies: ["Laravel"],
+    github: "https://github.com",
+    demo: "https://taskmanager-bkcq.onrender.com",
+    featured: true,
+  },
+  {
     title: "Inventory Management System",
     description:
       "Complete inventory tracking solution with real-time updates, barcode scanning, and automated reordering.",
