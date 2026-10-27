@@ -8,12 +8,12 @@ import { Section, Card, TechBadge } from "@/components/shared";
 
 const projects = [
   {
-    title: "ERP System",
+    title: "Book Store ERP System",
     description:
       "A comprehensive enterprise resource planning system with dashboard, authentication, inventory management, sales tracking, quotations, invoices, and reporting.",
     technologies: ["Laravel", "React", "MySQL", "REST API"],
     github: "https://github.com",
-    demo: "https://book-store-demo-rho.vercel.app/login",
+    demo: "https://book-store-demo-rho.vercel.app/",
     featured: true,
   },
   {
